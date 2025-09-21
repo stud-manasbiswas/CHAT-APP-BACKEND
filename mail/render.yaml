@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: chat-mail-service
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    plan: free
+    region: oregon
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5003
+      - key: GMAIL_USER
+        value: your-email@gmail.com
+      - key: GMAIL_PASS
+        value: your-gmail-app-password
+      - key: RABBITMQ_URL
+        value: amqp://localhost

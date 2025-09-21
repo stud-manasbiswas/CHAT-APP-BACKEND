@@ -5,6 +5,7 @@ import { createClient } from "redis";
 import userRoutes from "./routes/user.js";
 import { connectRabbitMQ } from "./config/rabbitmq.js";
 import cors from "cors";
+import healthRouter from './routes/health.js'
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors());
+app.use('/', healthRouter);
 
 app.use("/api/v1", userRoutes);
 

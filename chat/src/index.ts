@@ -4,7 +4,7 @@ import connectDb from "./config/db.js";
 import chatRoutes from "./routes/chat.js";
 import cors from "cors";
 import { app, server } from "./config/socket.js";
-
+import healthRouter from './routes/health.js'
 dotenv.config();
 
 connectDb();
@@ -12,6 +12,7 @@ connectDb();
 app.use(express.json());
 
 app.use(cors());
+app.use('/', healthRouter);
 
 app.use("/api/v1", chatRoutes);
 
