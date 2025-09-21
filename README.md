@@ -57,7 +57,7 @@ backend/
 ├── user/        # User/Auth microservice
 └── .gitignore
 
-
+```
 ---
 
 ## 🛠️ Getting Started
