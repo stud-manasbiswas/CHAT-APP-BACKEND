@@ -48,13 +48,14 @@ The backend is split into **independent microservices** for scalability and main
 All services communicate via **RabbitMQ** and share data through **MongoDB** and **Redis**.
 
 ---
-
 ## 📂 Folder Structure
 
+```bash
 backend/
-├── chat/       #Chat microservice
-├── mail/       #Mail microservice
-├── user/       #User microservice
+├── chat/        # Chat microservice
+├── mail/        # Mail/Notification microservice
+├── user/        # User/Auth microservice
+└── .gitignore
 
 
 ---
@@ -82,7 +83,3 @@ For production, build and start each service:
 cd chat && npm run build && npm start
 cd ../mail && npm run build && npm start
 cd ../user && npm run build && npm start
-
-
-
-
