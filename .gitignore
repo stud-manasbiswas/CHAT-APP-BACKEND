@@ -1,0 +1,76 @@
+# Environment Files (NEVER UPLOAD THESE!)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+
+# Node.js Dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Output
+dist/
+build/
+.next/
+out/
+**/.next/
+**/dist/
+**/build/
+
+# Runtime Files
+*.log
+logs/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage & Testing
+coverage/
+.nyc_output/
+.coverage/
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+
+# Docker
+docker-compose.override.yml
+Dockerfile.local
+
+# Secrets & Keys
+*.pem
+*.key
+.secret
+secrets/
+
+# OS Generated Files
+.DS_Store?
+ehthumbs.db
+Thumbs.db
